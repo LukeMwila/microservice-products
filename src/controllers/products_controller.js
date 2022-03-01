@@ -14,7 +14,10 @@ const getById = (req, res, next) => {
   const productId = req.params.id;
   const products = [
     { id: '1a', name: 'Space-X Spaceship Memorabilia' },
-    { id: '1b', name: 'Maxed Basketball Ball' }
+    { id: '1b', name: 'Maxed Basketball Ball' },
+    { id: '1c', name: 'MSI Laptop' },
+    { id: '1d', name: 'Canon DSLR Camera' },
+    { id: '1e', name: 'Raspberry Pi4' }
   ];
   try {
     const product = products.filter(product => product.id === productId)[0]
