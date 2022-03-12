@@ -1,11 +1,11 @@
 const get = (req, res, next) => {
   try {
     const products = [
-      { id: '1a', name: 'SUSE Rancher Tee' },
-      { id: '1b', name: 'Cow-meleon Face Mask' },
-      { id: '1c', name: 'Cow-meleon Plushie' },
-      { id: '1d', name: 'Longhorn T-Shirt' },
-      { id: '1e', name: 'Rancher Cow T-Shirt' }
+      { id: '1a', name: 'DSLR Camera' },
+      { id: '1b', name: 'Trainers' },
+      { id: '1c', name: 'Bluetooth Headphones' },
+      { id: '1d', name: 'Avengers T-Shirt' },
+      { id: '1e', name: 'Coffee Mug' }
     ];
     res.status(200).send(products);
   } catch (e) {
@@ -16,11 +16,11 @@ const get = (req, res, next) => {
 const getById = (req, res, next) => {
   const productId = req.params.id;
   const products = [
-    { id: '1a', name: 'SUSE Rancher Tee' },
-    { id: '1b', name: 'Cow-meleon Face Mask' },
-    { id: '1c', name: 'Cow-meleon Plushie' },
-    { id: '1d', name: 'Longhorn T-Shirt' },
-    { id: '1e', name: 'Rancher Cow T-Shirt' }
+    { id: '1a', name: 'DSLR Camera' },
+    { id: '1b', name: 'Trainers' },
+    { id: '1c', name: 'Bluetooth Headphones' },
+    { id: '1d', name: 'Avengers T-Shirt' },
+    { id: '1e', name: 'Coffee Mug' }
   ];
   try {
     const product = products.filter(product => product.id === productId)[0]
